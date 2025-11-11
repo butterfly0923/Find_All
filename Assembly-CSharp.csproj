@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CF2A3A9-27E9-498E-B111-8B0B249BDD87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TMPro</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="spine-csharp">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\spine-csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="spine-unity">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\spine-unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Steam\steamapps\common\FIND ALL\Find All\Find All_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Achievement_manager.cs" />
+    <Compile Include="Ach_Timer.cs" />
+    <Compile Include="Add_Item_Find_Material.cs" />
+    <Compile Include="Add_Item_Find_Material_Spine.cs" />
+    <Compile Include="Add_Object_Group.cs" />
+    <Compile Include="All_Buttons_Menu.cs" />
+    <Compile Include="All_Items_Data.cs" />
+    <Compile Include="All_Material_Scene.cs" />
+    <Compile Include="Arrow_position_z.cs" />
+    <Compile Include="Arrow_Rotate.cs" />
+    <Compile Include="Audio_Effect.cs" />
+    <Compile Include="Audio_Effect_item_find.cs" />
+    <Compile Include="Audio_Effect_Player.cs" />
+    <Compile Include="Audio_mixer.cs" />
+    <Compile Include="Balloon_move.cs" />
+    <Compile Include="Boat_move.cs" />
+    <Compile Include="Bridge_Open_Zone.cs" />
+    <Compile Include="Button_next_level_in_level.cs" />
+    <Compile Include="Button_Puzzle_On.cs" />
+    <Compile Include="Button_world_main.cs" />
+    <Compile Include="BW_open_house.cs" />
+    <Compile Include="Camera_controller.cs" />
+    <Compile Include="Camera_move.cs" />
+    <Compile Include="Camera_move_event.cs" />
+    <Compile Include="Cards_Manager.cs" />
+    <Compile Include="Card_mover.cs" />
+    <Compile Include="Card_Move_SO.cs" />
+    <Compile Include="Card_selection.cs" />
+    <Compile Include="Car_move.cs" />
+    <Compile Include="Car_move_old.cs" />
+    <Compile Include="Car_taxi_move.cs" />
+    <Compile Include="ChatController.cs" />
+    <Compile Include="Click_Ray.cs" />
+    <Compile Include="Clock_Arrows.cs" />
+    <Compile Include="Cloud_move.cs" />
+    <Compile Include="Cloud_move_old.cs" />
+    <Compile Include="Collider_Click.cs" />
+    <Compile Include="Color_Menu.cs" />
+    <Compile Include="Color_Recept_All.cs" />
+    <Compile Include="Cursor_color_update.cs" />
+    <Compile Include="Cursor_move.cs" />
+    <Compile Include="Dark_Hole.cs" />
+    <Compile Include="DLC_manager.cs" />
+    <Compile Include="Drakkar_rotate.cs" />
+    <Compile Include="DropdownSample.cs" />
+    <Compile Include="D_Game.cs" />
+    <Compile Include="D_Setting.cs" />
+    <Compile Include="D_Void.cs" />
+    <Compile Include="EA.cs" />
+    <Compile Include="End_Demo_Table.cs" />
+    <Compile Include="Enums_Audio.cs" />
+    <Compile Include="Enums_Level.cs" />
+    <Compile Include="Enums_Localization.cs" />
+    <Compile Include="Enums_Steam.cs" />
+    <Compile Include="Enum_Data.cs" />
+    <Compile Include="EnvMapAnimator.cs" />
+    <Compile Include="Events_Menu_UI.cs" />
+    <Compile Include="Event_spine_add_animation.cs" />
+    <Compile Include="Examples\Benchmark01.cs" />
+    <Compile Include="Examples\Benchmark01_UGUI.cs" />
+    <Compile Include="Examples\Benchmark02.cs" />
+    <Compile Include="Examples\Benchmark03.cs" />
+    <Compile Include="Examples\Benchmark04.cs" />
+    <Compile Include="Examples\CameraController.cs" />
+    <Compile Include="Examples\ObjectSpin.cs" />
+    <Compile Include="Examples\ShaderPropAnimator.cs" />
+    <Compile Include="Examples\SimpleScript.cs" />
+    <Compile Include="Examples\SkewTextExample.cs" />
+    <Compile Include="Examples\TeleType.cs" />
+    <Compile Include="Examples\TextConsoleSimulator.cs" />
+    <Compile Include="Examples\TextMeshProFloatingText.cs" />
+    <Compile Include="Examples\TextMeshSpawner.cs" />
+    <Compile Include="Examples\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Examples\TMP_ExampleScript_01.cs" />
+    <Compile Include="Examples\TMP_FrameRateCounter.cs" />
+    <Compile Include="Examples\TMP_TextEventCheck.cs" />
+    <Compile Include="Examples\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Examples\TMP_TextSelector_A.cs" />
+    <Compile Include="Examples\TMP_TextSelector_B.cs" />
+    <Compile Include="Examples\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Examples\VertexColorCycler.cs" />
+    <Compile Include="Examples\VertexJitter.cs" />
+    <Compile Include="Examples\VertexShakeA.cs" />
+    <Compile Include="Examples\VertexShakeB.cs" />
+    <Compile Include="Examples\VertexZoom.cs" />
+    <Compile Include="Examples\WarpTextExample.cs" />
+    <Compile Include="Exit_Game.cs" />
+    <Compile Include="Find_event_count.cs" />
+    <Compile Include="Find_event_items.cs" />
+    <Compile Include="Find_event_main.cs" />
+    <Compile Include="Find_event_object.cs" />
+    <Compile Include="Find_event_object_spine.cs" />
+    <Compile Include="Fon_Sound_Start_Filler_delete.cs" />
+    <Compile Include="Forest_New_Stady.cs" />
+    <Compile Include="FPS_text.cs" />
+    <Compile Include="Frame_Helper.cs" />
+    <Compile Include="Frame_Items.cs" />
+    <Compile Include="Frame_Position.cs" />
+    <Compile Include="Glare_camera.cs" />
+    <Compile Include="Help_find_item_manager.cs" />
+    <Compile Include="ICursorReaction.cs" />
+    <Compile Include="Iinteractive.cs" />
+    <Compile Include="ILevelEvent.cs" />
+    <Compile Include="Image_move.cs" />
+    <Compile Include="Input_main.cs" />
+    <Compile Include="Interactive.cs" />
+    <Compile Include="Interactive_animation.cs" />
+    <Compile Include="Interactive_momental.cs" />
+    <Compile Include="Interactive_move_line.cs" />
+    <Compile Include="Interactive_object.cs" />
+    <Compile Include="Item_Data.cs" />
+    <Compile Include="Item_Find_Material.cs" />
+    <Compile Include="Item_Find_Material_Spine.cs" />
+    <Compile Include="Item_Find_SOUND.cs" />
+    <Compile Include="Item_Groups_Manager.cs" />
+    <Compile Include="Item_Main.cs" />
+    <Compile Include="Item_Main_Spine.cs" />
+    <Compile Include="IUpdateLanguage.cs" />
+    <Compile Include="Language_controller.cs" />
+    <Compile Include="Layer_distance_multiply.cs" />
+    <Compile Include="Layer_Set_Object_Editor.cs" />
+    <Compile Include="Level_Data.cs" />
+    <Compile Include="Level_Manager_UI.cs" />
+    <Compile Include="Level_Surrogate.cs" />
+    <Compile Include="Line_Level_Alpha.cs" />
+    <Compile Include="Load_Level_Map.cs" />
+    <Compile Include="Load_Scene_old_game.cs" />
+    <Compile Include="Localization_data.cs" />
+    <Compile Include="Localization_first_play_game.cs" />
+    <Compile Include="Localization_manager.cs" />
+    <Compile Include="Localization_string.cs" />
+    <Compile Include="Localization_text.cs" />
+    <Compile Include="Localization_T_Add_Interface.cs" />
+    <Compile Include="Localization_T_Menu.cs" />
+    <Compile Include="Localization_T_Setting.cs" />
+    <Compile Include="Main_Level_Manager.cs" />
+    <Compile Include="Main_Menu_Manager_UI.cs" />
+    <Compile Include="Main_Menu_Open_Closed.cs" />
+    <Compile Include="Manager_Add_Object.cs" />
+    <Compile Include="Map_manager.cs" />
+    <Compile Include="Marker_find_items.cs" />
+    <Compile Include="Marker_spine_items.cs" />
+    <Compile Include="Materials_SO.cs" />
+    <Compile Include="Materials_Spine_SO.cs" />
+    <Compile Include="Mill_Rotate.cs" />
+    <Compile Include="Music_controller.cs" />
+    <Compile Include="Music_Manager.cs" />
+    <Compile Include="Name_Key_Map.cs" />
+    <Compile Include="Next_Level_or_Map.cs" />
+    <Compile Include="number_manager.cs" />
+    <Compile Include="number_set.cs" />
+    <Compile Include="Object_Color_Material.cs" />
+    <Compile Include="Open_Closed_Map.cs" />
+    <Compile Include="Open_door_helper_manager.cs" />
+    <Compile Include="Open_door_point.cs" />
+    <Compile Include="Pasanger.cs" />
+    <Compile Include="Point_dubl_position.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puzzle_Cave.cs" />
+    <Compile Include="Puzzle_Data.cs" />
+    <Compile Include="Puzzle_Full.cs" />
+    <Compile Include="Puzzle_Manager.cs" />
+    <Compile Include="Puzzle_Segment.cs" />
+    <Compile Include="QuaternionSerializationSurrogate.cs" />
+    <Compile Include="Reset_Frame_and_Scene.cs" />
+    <Compile Include="Reset_Level_manager.cs" />
+    <Compile Include="Resolution_Monitor.cs" />
+    <Compile Include="Rotate_Card.cs" />
+    <Compile Include="S1_E_Open_Door.cs" />
+    <Compile Include="Sa_IS.cs" />
+    <Compile Include="Scenes_Data.cs" />
+    <Compile Include="Scene_load.cs" />
+    <Compile Include="Scene_Loader.cs" />
+    <Compile Include="Setting_dropdown.cs" />
+    <Compile Include="Setting_FA.cs" />
+    <Compile Include="Setting_main.cs" />
+    <Compile Include="Setting_st_data.cs" />
+    <Compile Include="Set_Find_Items.cs" />
+    <Compile Include="Set_Singleton.cs" />
+    <Compile Include="Ship_move.cs" />
+    <Compile Include="Ship_move_scene_1.cs" />
+    <Compile Include="SL_Data.cs" />
+    <Compile Include="Sound_Music_controller.cs" />
+    <Compile Include="Sound_Update_Stady.cs" />
+    <Compile Include="Stady_Find.cs" />
+    <Compile Include="Stady_Main.cs" />
+    <Compile Include="Stady_Puzzle.cs" />
+    <Compile Include="Start_Black_Front.cs" />
+    <Compile Include="Start_Level_Manager.cs" />
+    <Compile Include="Status_All.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="Storage.cs" />
+    <Compile Include="Structs.cs" />
+    <Compile Include="Struct_Interactive.cs" />
+    <Compile Include="Struct_Level.cs" />
+    <Compile Include="St_main.cs" />
+    <Compile Include="Test_ADD.cs" />
+    <Compile Include="Test_Button_.cs" />
+    <Compile Include="Test_MAIN.cs" />
+    <Compile Include="Test_Update_Action_Map.cs" />
+    <Compile Include="Thanks_for_playing.cs" />
+    <Compile Include="Timer_level_1.cs" />
+    <Compile Include="Time_converter.cs" />
+    <Compile Include="TMP_DigitValidator.cs" />
+    <Compile Include="TMP_PhoneNumberValidator.cs" />
+    <Compile Include="TMP_TextEventHandler.cs" />
+    <Compile Include="Tower_Stones.cs" />
+    <Compile Include="UI_Move_Up_Down.cs" />
+    <Compile Include="UI_Panel_Alpha.cs" />
+    <Compile Include="UI_Panel_Move.cs" />
+    <Compile Include="Update_sprite_alpha.cs" />
+    <Compile Include="Vector3SerializationSurrogate.cs" />
+    <Compile Include="Version_text.cs" />
+    <Compile Include="Wagon_mover.cs" />
+    <Compile Include="Wagon_traectoria.cs" />
+    <Compile Include="Water_cave.cs" />
+    <Compile Include="Water_Move.cs" />
+    <Compile Include="Wave_Set_Curve.cs" />
+    <Compile Include="Zone_manager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
